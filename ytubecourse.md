@@ -3,13 +3,12 @@
 Continous integration with Jenkins 
 Continous integration is reason to generate a shorter release cycles for the clients and also it is way to get automation in the release process. 
 
-Code to continous integration tool which will build and run tests and then gives and feed back if needed to the deveoper or else do the release automatically. Reducing the release risk with faster delivery of the finished product. 
+Code to continous integration tool which will build and run tests and then give feed back if needed to the deveoper or else release the artifacts. Reducing the release risk with faster delivery of the finished product. 
 
 
-### Jenkins Notes  
-
-How to set up Jenkins 
-- intall jenkins in the docker container if you are using container 
+### Jenkins 
+Set up Jenkins 
+- install jenkins in the docker container if you are using container 
 ```bash
 sudo apt get openjdk8-jdkxs
 sudo apt-get install apache2 
@@ -22,7 +21,7 @@ sudo apt-get update
 
 sudo apt-get install jenkins 
 
-serive jenkins status 
+service jenkins status 
 
 ```
 
