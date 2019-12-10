@@ -81,12 +81,12 @@ docker run --rm -ti --net test-network --name orange-server ubuntu:14.04 bash
 ```
 ### Add more Networks  
 
-Create another network and make the network discoverable from blue machine 
+Create another network and make the network discoverable from apple-server 
 ```bash
 # 
 docker network create applesonly
 # 
-# now connect the find-blue with blue machine 
+# now connect the applesonly with apple-server
 docker network connect applesonly apple-server
 
 ```
