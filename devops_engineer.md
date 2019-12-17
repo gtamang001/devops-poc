@@ -154,6 +154,89 @@ Rugged Manifesto:
 gauntlt 
 
 
+# Devops Foundation CI/CD 
+
+Continuous Integtration 
+
+Continuous Deployment 
+
+Continuous Delivery : Additional change ( deploy to production like environment)
+
+### Benefits of CI/CD 
+Long term benefits 
+ - Emplowering teams 
+ - Lowerwed Cycle time (in hrs instead of weeks and months or days )
+ - Better Security (high performers means better security)
+ - Rythm of practice means regularity and easy for people 
+ - Productivity increase 
+### Build pipelines in practice 
+Jenkins, Bamboo, Circlec, unit tests , packaging
+1. Version Control 
+    Use Git, commit oftent, share codebase, branching strategies
+    Trunk based approach or master branch approach, linters and formatter, unit test and unit test results in pull request itself in pre-commit hook
+    - Practicle 
+    ```bash
+    git show commit-id # gives you the detail of commit
+    # always run 
+    git diff to check 
+    # check hooks 
+    cat ./hooks/git-pre-commit.hook
+    make test 2>&1
+    if [ $? -ne 0 ]
+    then 
+            echo "Failed Tests .."
+            exit 1
+    fi
+
+    go fmt 2>&1 
+    if [$? -ne 0 ]
+    then 
+            echo "go vet has detected potential issues with your project.."
+            exit 1
+    fi
+
+    fo vet 2>&1
+    if [ $? -ne 0 ]
+    then 
+            echo " go vet has detected potential issues in your project.."
+            exit 1
+    fi
+    
+
+    ```
+
+    ### Options for CI 
+     - Open Source Jenkins  
+     - Commercial
+     - SaaS for CI (Circle CI, Travis CI)
+     A proper CI culture is always a default options while implementing CI process. 
+
+# Jenkins 
+
+Free Open Source Tool 
+
+### Packaging and Artifact management
+Benefits of Artifacts 
+- Reliability
+- Composability (common packaging format, debian packages ?? fpm ??)
+- Security ()
+- Sharability 
+Build it test it and package it and deploy it 
+
+### Sample Nexus artifactory 
+Nexus
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
