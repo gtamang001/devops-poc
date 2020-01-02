@@ -226,8 +226,53 @@ Build it test it and package it and deploy it
 ### Sample Nexus artifactory 
 Nexus
 
+### Testing in DevOps 
+TDD, BDD, and other ways of testing
+Unit testing, Integration Testing 
+- Tract various metrics for the growth and agility of your team. 
+- Testing is always key element to add in your development 
+### Testing Practices : 
+Using go language sample 
+- Using go convey 
+```bash 
+# 
+cd workdirectory 
+# run go convey 
+make convey 
+# open ui at 9999 port 
+``` 
+### Linters 
+```bash 
+make lint
+```
 
+### Next up is self service Deployments 
+ insert image here 
+ Same artifacts same way deployments and similar environments for deployments. 
 
+ ### Deployment Tools and Options 
+  - Source pulls (caputrano ? )
+  - CM systems (chef, puppet )
+  - Orchestration push (Rundeck, ansible)
+  - Build (Docker, rancher)
+  - Others
+  - build dashboard for deployment 
+### Deployment using Chef 
+Server Spec tests 
+
+### Integration Testing
+- Testing performed to expose defects in the interfaces and in the interactions between integrated components or systems. 
+### End to End Testing 
+Regression Testing 
+Acceptance Testing 
+### Security Testing 
+- Static :        
+        finding out vulnerable js (using retire js)
+- Dynamic : 
+        Running code, Gauntlt as part of CI pipeline 
+        archni - xx attack, veeracode 
+        sonatype 
+        
 
 
 
