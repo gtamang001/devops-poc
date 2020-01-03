@@ -1,5 +1,5 @@
 # DevOps Key Notes
-### Key Phrases and terms 
+## Key Phrases and terms 
 
 People over process over tools : emphasize priority
 
