@@ -1,11 +1,11 @@
-# Jenkins Notes 
+# Jenkins
 ## Topics 
-### Why Jenkis 
+### Why Jenkis ? 
     Ease of use 
-    Build in documentation 
+    Built in documentation 
     Open source
     Extensibility, plugins available 
-### Key Terminology 
+### Key Terminologies 
     - Project 
     - Build 
     - Step 
@@ -30,9 +30,9 @@
 
     ```
 - Standalone ubuntu Download 
-    exercise files 
+
 ### Jenkins Dashboard 
-- new item - starts the process of creating new project 
+- new item - starts the process of creating new project or build step
 - people - users 
 - build history completed build 
 - Manage Jenkins : configure jenkins 
@@ -50,7 +50,7 @@
     - Build Environment
         - delete and build 
 ### Build Step 
-This includes various way to build your project
+This includes various ways to build your project
 ### Post build
 This step allows us to wrap up the build 
 ### Jobs in detail 
