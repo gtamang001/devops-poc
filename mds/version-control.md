@@ -27,6 +27,8 @@ Labelling all the changes
     - Git Tagging 
         - git tag -a V1 -m "Label version 1" 
         - git push --tag && git pull --tag 
-
+    Merging 
 ### Mercurial 
+    Distributed version control system similar to git
+    open source and commercial 
 ### Conclusion 

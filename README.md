@@ -15,7 +15,8 @@
  - ### DevOps CI/CD Foundation ( sample project )
  [Sample CICD project ](https://github.com/gtamang001/cicd-poc)
 ## DevOps Foundation Sub topics 
- - ### DevSecOps 
+ - ### DevSecOps
+    Data Security implementation. Drive security in the DevOps environments. Tools and methods used. 
    - #### Building Continuous Delivery Pipeline
    - #### Automated Security Testing 
  - ### Infrastructure as Code 

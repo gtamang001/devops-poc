@@ -272,11 +272,67 @@ Acceptance Testing
         Running code, Gauntlt as part of CI pipeline 
         archni - xx attack, veeracode 
         sonatype 
-        
 
+# DevSecOps 
+        DevOps is a culture shift
+        Normal Security Scan flow
+ 1. Develop Code 
+ 2. Send to Security 
+ 3. Scan 
+ 4. Send PDF of result 
+ 5. find false positive 
+ 6. Fix security defects 
 
+ This process is too slow. Hence new approach is needed, enter DevSecOps 
 
+ | DevSecOps  | DevOps Rugged | 
+ | :--------------- | ---------------| 
+ | Overall automation | Developer focused | 
 
+Automation meaning in DevSecOps 
+Dont automate pushing a button. 
+Real-time notification to the developers.
+ChatOps, not pdfs 
+### Education 
+Educate developers on security basics 
+### Educate Dev team 
+Make security team auditor instead of being the main focus. Make developer team the main focus of development team. 
+
+### Security team duties 
+- provide framework of security to devs 
+- provide tool and educate them 
+- provide needed expertise 
+- work closely with dev team 
+- shift security toward left of application development lifecycle.
+### Technologies 
+APIs
+Containers 
+
+### Containers and Security automation 
+Using security as container and ship it. 
+Use artifactory to keep version of the security tool.
+
+### A typical process 
+| Process | Tools | 
+| : -----------| --------------------| 
+| Code         | Bitbucket           | 
+| Task Tracking | Jira               | 
+| Automation    | Jenkins            | 
+| Configuration | Ansible            | 
+| Deployment    | Nagios             | 
+Make security work this workflow.
+? ChatOps 
+? IAST tools 
+### Automation on Ops Side 
+### Free tools 
+- Find Security Bugs (java, jenkins)
+- OWASP zed Attack Proxy Object (ZAP) ( Jenkins and Docker )
+- sqlmap 
+- OpenVAS 
+- Recon- ng (recon framework) 
+- Glue (docker container)
+
+### Exercise is implementing Glue with JIRA 
 
 
 
