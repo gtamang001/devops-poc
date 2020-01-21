@@ -15,7 +15,7 @@
     5. Inboud add rules
 
     | Types | Protocol | Port Range | Source | Description | 
-    | :-----| :--------| :----------| : -----|-------------| 
+    | -----| :--------| :----------| :-----| :-------------| 
     | SSH   | TCP      | 22         | My IP  | SSH         | 
     | HTTP  | TCP      | 80         | Anywhere| HTTP       | 
     | HTTPS | TCP      | 443        | Anywhere | HTTPS     | 
