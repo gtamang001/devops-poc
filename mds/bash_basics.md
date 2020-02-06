@@ -1,4 +1,23 @@
-## Bash Scripting Basics 
+
+# Linux Shell Basics 
+## Overview 
+- Shell Types 
+- Variables and Shell Environment 
+- Tips and Tricks 
+- Configure Shell History 
+- Pattern Matching with Globs 
+- Pattern Matching with Extended Globs 
+## Using Bash 
+- Escapes and quotes 
+- Brace and path subsitution 
+- Command and variable subsitution 
+Nested command subsitution ($ and parenthesis combination)
+- Named and Unnamed pipes 
+- File redirects and tees 
+- 
+## Linux Processses 
+## Job Scheduling 
+## System Services  
 
 0 = stdin , 1 => stnout , 2 => stderr
 ```bash

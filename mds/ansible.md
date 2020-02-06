@@ -1,14 +1,21 @@
-# Ansible Notes 
-
+# Ansible 
+## Introduction 
 Ansible is task execution Engine
-
-It target the local computer and also all the computers attached to that computers via network
-
-Very Scalable 
-
+It target the local computer and also all the computers attached to that computers via network.
 Execute list of tasks on various machines 
-
-Lightweight Fleet Management System
+ - Low Cost Fleet Management 
+ - Get Started Guide 
+## Parts of Ansible
+ - Workd with hosts and Variables 
+ - Provided Code to accomplish work 
+ - Playbook: Collections of tasks 
+ - Control Tasks and Play Behavior 
+ - Challenge task 
+## What is Ansible Good For ? 
+ - Code driven deployments and operations 
+ - Coordinate complicated sets of actions 
+ - Manage System 
+## Why choose Ansible ? 
 
 Communication uses SSH : 
 Widely trusted and used communication protocol 
