@@ -2,7 +2,7 @@
 
 ## DevOps Foundations
  - ### DevOps Intro
- DevOps can have varioud definitions but in simple lehmen's terms it is a evolutionary software development process. It is closely to tied to agile methodology and it encorporates the Development and Operations facets of software creation. 
+ DevOps can have various definitions but in simple lehmen's terms it is a evolutionary software development process. It is closely to tied to agile methodology and it encorporates the Development and Operations facets of software creation. 
  - ### Building Blocks 
  Based on above definition, mainly the building blocks of DevOps originates with the agile principle of software development.
  - ### Infrastructure Automation 
