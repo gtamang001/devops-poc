@@ -4,9 +4,9 @@
  - ### DevOps Intro
  DevOps can have various definitions but in simple lehmen's terms it is a evolutionary software development process. It is closely to tied to agile methodology and it encorporates two major facets of software development. Development and Operations. 
  - ### Building Blocks 
- Based on above definition, mainly the building blocks of DevOps originates with the agile principle of software development.
+ Based on the above definition, the building blocks of DevOps mainly originates from the agile principle of software development.
  - ### Infrastructure Automation 
- Software development requires various infrastructures. Infrastructures needs resources to handle it or run it mostly manually in the past. DevOps is all about reducing the manual and make it automatic and economic as it evolves on daily basis. 
+ Software development requires various infrastructures. Infrastructures needs resources to handle them or run them. These processes were mostly manually in the past. DevOps comes in here and help reduce the manual part of Software development and make it automated and economic as it evolves on daily basis. The evolution part of this process allows this process to become flexible as per the changing business needs and aspirations.  
  - ### Continous Delivery 
  Continuous delivery is the outcome of a effectively implemented DevOps practice. 
  - ### Reliability Engineering 
