@@ -4,9 +4,9 @@ Ansible is task execution Engine
 It target the local computer and also all the computers attached to that computers via network.
 Execute list of tasks on various machines 
  - Low Cost Fleet Management 
- - Get Started Guide 
+ - Getting Started Guide 
 ## Parts of Ansible
- - Workd with hosts and Variables 
+ - Works with hosts and Variables 
  - Provided Code to accomplish work 
  - Playbook: Collections of tasks 
  - Control Tasks and Play Behavior 
