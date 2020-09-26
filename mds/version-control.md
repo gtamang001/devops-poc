@@ -1,5 +1,5 @@
 # Fundamentals of Version Control system 
-Keeping track of evolution is vital for software development lifecycle. 
+Versioning is very important process for software development lifecycle. 
 
 ### Background of Software Version Control 
 Keep track of changes 

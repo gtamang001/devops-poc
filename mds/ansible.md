@@ -1,14 +1,13 @@
 # Ansible 
 ## Introduction 
-Ansible is task execution Engine
-It target the local computer and also all the computers attached to that computers via network.
-Execute list of tasks on various machines 
+Ansible is a task execution Engine. It helps execute list of tasks on various machines. 
+It can target the local computer and also the computers attached to that computers via network.
  - Low Cost Fleet Management 
  - Get Started Guide 
 ## Parts of Ansible
- - Workd with hosts and Variables 
+ - Works with hosts and Variables 
  - Provided Code to accomplish work 
- - Playbook: Collections of tasks 
+ - use playbook which is a collections of tasks 
  - Control Tasks and Play Behavior 
  - Challenge task 
 ## What is Ansible Good For ? 
@@ -19,14 +18,13 @@ Execute list of tasks on various machines
 
 Communication uses SSH : 
 Widely trusted and used communication protocol 
+If Ansible operator can ssh into a target system, he/she can perfrom actions on it using Ansible.
 
-If Ansible Operator can ssh into a target system, he/she can perfrom actions on it using Ansible.
-
-Can be installed using python pip command 
+can be installed using python pip command 
 
 Inventory 
-Collection of Hosts IP addresses 
-Sometimes categorized into groups and Subgroups 
+Collection of Host IP addresses 
+Sometimes categorized into groups and sub-groups 
 
 Inventory Variables : 
 key : Value pairs 
