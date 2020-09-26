@@ -2,11 +2,19 @@
 
 ## DevOps Foundations
  - ### DevOps Intro
+<<<<<<< HEAD
  DevOps in simple lehmen's term is the combination role of Development and Operations in agile software development process. 
  - ### Building Blocks 
 Understanding of Development and Operations of the software development constitutes DevOps concept(role)
  - ### Infrastructure Automation 
  Software development requires various infrastructures. Infrastructures needs resources to handle and run it. This process was mostly manual in the past. Introduction of DevOps has automated this manual process of software development and revolutionized the industry. 
+=======
+ DevOps can have various definitions but in simple lehmen's terms it is a evolutionary software development process. It is closely to tied to agile methodology and it encorporates two major facets of software development. Development and Operations. 
+ - ### Building Blocks 
+ Based on the above definition, the building blocks of DevOps mainly originates from the agile principle of software development.
+ - ### Infrastructure Automation 
+ Software development requires various infrastructures. Infrastructures needs resources to handle them or run them. These processes were mostly manually in the past. DevOps comes in here and help reduce the manual part of Software development and make it automated and economic as it evolves on daily basis. The evolution part of this process allows this process to become flexible as per the changing business needs and aspirations.  
+>>>>>>> 019d49bc60c953a3161e6eaad41e5906393933a4
  - ### Continous Delivery 
  Continuous delivery is the outcome of a effectively implemented DevOps practice. 
  - ### Reliability Engineering 

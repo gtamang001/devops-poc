@@ -3,7 +3,7 @@
 Ansible is a task execution Engine. It helps execute list of tasks on various machines. 
 It can target the local computer and also the computers attached to that computers via network.
  - Low Cost Fleet Management 
- - Get Started Guide 
+ - Getting Started Guide 
 ## Parts of Ansible
  - Works with hosts and Variables 
  - Provided Code to accomplish work 
