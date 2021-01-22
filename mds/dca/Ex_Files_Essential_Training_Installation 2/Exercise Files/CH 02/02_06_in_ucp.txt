@@ -1,0 +1,6 @@
+# Install UCP
+docker container run --rm -it --name ucp \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  docker/ucp:2.2.5 install \
+  --host-address <node-ip-address> \
+  --interactive

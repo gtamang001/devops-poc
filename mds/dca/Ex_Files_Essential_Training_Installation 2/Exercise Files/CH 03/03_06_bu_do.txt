@@ -1,0 +1,25 @@
+# Backup UCP
+
+docker container run \
+  --log-driver none --rm \
+  --interactive \
+  --name ucp \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  docker/ucp:2.2.6 backup \
+  --id <ucp-instance-id> \
+  --passphrase "secret" > /tmp/backup.tar
+
+# Backup registry content data
+
+sudo tar -cf backup-images.tar \ $(dirname $(docker volume inspect --format '{{.Mountpoint}}' dtr-registry-<replica-id>))
+
+# Backup DTR metadata
+
+read -sp 'ucp password: ' UCP_PASSWORD; \
+docker run --log-driver none -i --rm \ 
+--env UCP_PASSWORD=$UCP_PASSWORD \
+docker/dtr:2.3.11 backup \ 
+--ucp-url <ucp-url> \
+ --ucp-insecure-tls \
+ --ucp-username <ucp-username> \
+ --existing-replica-id <replica-id> > backup-metadata.tar

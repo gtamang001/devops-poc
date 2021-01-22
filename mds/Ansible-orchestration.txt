@@ -1,0 +1,19 @@
+Ansible uses SSH protocol to complete the tasks in given nodes. 
+Written in Python Programming language 
+Ansible instructions are written in Yaml programming language. 
+
+Ansible, maintain, monitor and mange fleets of servers these servers. 
+GUI version of Ansible is Red Hat Ansible Tower 
+Uses Modules concept, example module ping 
+Playbool yaml file is used to create the undelining architecture and 
+platform for ansible. 
+
+Extensibility of Ansible through the use of Modules, i.e. Ping 
+Also, available Plugins to enhance functionality 
+
+Components Ansible is made up of : 
+inventories --> list of hosts 
+ansible.cfg --> configuration changes 
+roles ---> Management through roles 
+Playbook.yml ---> has playbook ---> has tasks --> Uses 
+Modules to complete the tasks 
