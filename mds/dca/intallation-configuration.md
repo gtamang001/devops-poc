@@ -199,10 +199,97 @@ tar swarm swarm-bak.tar # back it up incase you need
 apt-get update # update host packages
 # follow install instructions to intall docker 
 ```
+## Configuring Docker 
+ ### Storage Drivers 
+Storing data needed for the containers, recommended to use volumes. Or can be stored within the containers, storage driver. Checkout, Docker storage drivers doc in docker documentation.
+```bash
+docker info | more # storage driver 
+```
+ ### Docker repositories and Docker Hub
+ A Docker repository is a collection of related Docker images with the same name but different tags. A registry, on the other hand, is a place where you store your images. A registry can be public, it can be private, and it can have multiple repositories. The most common and default registry for Docker is Docker's own public registry, Docker Hub. As part of a new Docker installation it's common to set up a repository and link it to Docker Hub
+ ### Login to docker hub 
+ ```bash
+ docker login # enter docker hub credentials, create one if you don't have one
+ # pull down an images 
+ docker pull <imagename>
+ docker pull alpine
+ # Create various tags of the images 
+ docker tag <image-id> docker-id/alpine:tag1 
+ docker tag <image-id> docker-id/alpine:tag2 
+ docker tag <image-id> docker-id/alpine:tag3
+ # push these images to docker hub 
+ docker push docker-id/<repository>
+ # check and validate by going into the docker hub
 
+ # Delete images locally 
+ docker rm <image hash>
 
+ # Pull back the image from docker hub 
+ docker pull docker-id/repository:tag1
+ # this should pull down the image 
+ ```
+ ### Docker Swarm 
+ Docker Swarm is the cluster management and orchestration feature that's built into the Docker Engine. Docker Swarm is available whether or not you have Docker Community Edition or Enterprise Edition, and it's available on all platforms.
+ 
+ ### Set up to simulate 
+ - Use vmware fusion to spin off 3 machines (linux nodes)
+ - Node 1 : Manager Node - install docker engine and intall ucp 
+ - Node 2 and Node 3 : Worker nodes 
+ ```bash
 
+ ```
+ ### Creating and Managing users 
+  Docker's Universal Control Plane offers multi-user management and role-based access control. You can go in here to User Management and you can create new organizations and teams inside those organizations and then users inside the teams and then finally, roles for those users
+ ### Set up 
+ - Organization 
+  - Teams [A,B,C]
+   - Add users to these teams 
+ - Create user 
+ - Set up roles 
 
-
-
-
+ ### Docker daemon start manually 
+ ```bash
+ systemctl status docker 
+ # check if service is enabled
+ # disable on boot  
+ systemctl disable docker
+ # enable 
+ systemctl enable docker 
+ ```
+ ### Backing up docker 
+ - Docker Swarm Cluster 
+ ```bash
+ # Go to manager 
+ systemctl stop docker 
+ cd /var/lib/docker 
+ # Copy and archive the swarm directory 
+ systemctl start docker 
+ ```
+ - Universal Control Plane
+  ```bash
+  docker container run \
+  --log-driver non --rm \ 
+  --name cup \ 
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  docker/ucp:2.2.6 backup \
+  --id <ucp-instance-id> \
+  --passphrase "secret" > /tmp/backup.tar 
+  ```
+ - Docker trusted Registry
+ ```bash
+ # images 
+ sudo tar -cf backup-images.tar \ $(dirname $(docker volume inspect --format '{{.Mountpoint}}' dtr-registry-<replica-id>))
+  # Dtr metadata 
+  read -sp 'ucp password: ' UCP_PASSWORD; \
+  docker run --log-driver non -i --rm \
+  --env UCP_PASSWORD=$UCP_PASSWORD \
+  docker/dtr:2.3.11 backup \
+  --ucp-url <ucp-url> \
+  --ucp-instance-tls \
+  --ucp-username <ucp-username> \
+  --existing-replica-id <replica-id> > backup-metadata.tar 
+ ``` 
+ - Container volume Data 
+ ```bash
+ 
+ ```
